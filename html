@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Grid 1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+      padding: 20px;
+      font-size: 40px;
+      background: linear-gradient(90deg, #8e2de2, #4a00e0);
+      margin: 0;
+      border-bottom: 4px solid white;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 15px;
+      border: 3px solid orange;
+    }
+
+    .left img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .left p {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .right h2 {
+      text-align: center;
+      background: #d4a373;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .right p {
+      text-align: justify;
+      padding: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Display Grid 1</h1>
+
+  <div class="container">
+    
+    <!-- Columna izquierda -->
+    <div class="left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg" alt="León">
+      <p>León</p>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="right">
+      <h2>Reino Felino</h2>
+      <p>
+        El león (Panthera leo) es uno de los felinos más conocidos y admirados del mundo. 
+        Es considerado el “rey de la selva” por su fuerza, majestuosidad y comportamiento dominante dentro del reino animal. 
+        Pertenece a la familia de los félidos y es el segundo felino más grande, superado solo por el tigre.
+      </p>
+
+      <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Lion_king.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Lion_in_the_masai_mara.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
