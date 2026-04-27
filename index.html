@@ -4,21 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Display Grid 1</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
+      background-image: url("fondo.jpg");
+      background-size: cover;
+      background-position: center;
     }
 
     h1 {
       text-align: center;
-      color: black;
       padding: 20px;
-      font-size: 40px;
-      background: linear-gradient(90deg, #8e2de2, #4a00e0);
-      margin: 0;
-      border-bottom: 4px solid white;
+    }
+
+    h1 img {
+      max-width: 100%;
+      height: auto;
     }
 
     .container {
@@ -30,7 +33,7 @@
       margin: auto;
       background: white;
       border-radius: 15px;
-      border: 3px solid orange;
+      border: 4px solid orange;
     }
 
     .left img {
@@ -46,9 +49,7 @@
 
     .right h2 {
       text-align: center;
-      background: #d4a373;
-      padding: 10px;
-      border-radius: 5px;
+      margin-bottom: 10px;
     }
 
     .right p {
@@ -69,30 +70,36 @@
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Display Grid 1</h1>
+  <!-- Imagen del título -->
+  <h1>
+    <img src="titulo.png" alt="Reino Felino">
+  </h1>
 
   <div class="container">
     
-    <!-- Columna izquierda -->
+    <!-- Imagen principal -->
     <div class="left">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg" alt="León">
+      <img src="leon1.jpg" alt="León">
       <p>León</p>
     </div>
 
-    <!-- Columna derecha -->
+    <!-- Contenido -->
     <div class="right">
       <h2>Reino Felino</h2>
+
       <p>
         El león (Panthera leo) es uno de los felinos más conocidos y admirados del mundo. 
         Es considerado el “rey de la selva” por su fuerza, majestuosidad y comportamiento dominante dentro del reino animal. 
         Pertenece a la familia de los félidos y es el segundo felino más grande, superado solo por el tigre.
       </p>
 
+      <!-- Galería -->
       <div class="gallery">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Lion_king.jpg" alt="">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Lion_in_the_masai_mara.jpg" alt="">
+        <img src="leon1.jpg" alt="">
+        <img src="leon2.jpg" alt="">
       </div>
     </div>
 
